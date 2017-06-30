@@ -710,7 +710,11 @@
             <blockquote>
 <p>题将自动为这个页面显示标签</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath</div></pre></td></tr></table></figure>
+<h5 id="安全需求效验："><a href="#安全需求效验：" class="headerlink" title="安全需求效验："></a>安全需求效验：</h5><ul>
+<li>5分钟之类密码错误5次，则添加一行请输入验证码。如图：<br><img src="http://upload-images.jianshu.io/upload_images/1658521-0ffafb54ba7bf3a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Snip20170623_3.png"></li>
+</ul>
+<h5 id="小坑点1："><a href="#小坑点1：" class="headerlink" title="小坑点1："></a>小坑点1：</h5><p>事情经过：搞后台说这个验证码的好了，放上去了，你们试试。<br>结果我很负责任去做任务了，然而被坑了。结果一直报到<code>error</code>去了，<br>我以为是代码问题，检查再三，还是发现没啥问题，于是跟后台说这不行啊，后台就会说这不行嘛，再接着就会说，我忘了放上去了。。。。。。。</p>
 
           
         
